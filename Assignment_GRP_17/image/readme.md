@@ -45,10 +45,10 @@
 
 ## UML Diagram
 
-![]()
+![](./Assignment_GRP_17/image/uml.jpg)
 
 ## Test Driver
-
+![](./Assignment_GRP_17/image/test.jpg)
 > data.txt
 
 ![]()
@@ -104,7 +104,7 @@ public class test{
 - If a `FileNotFoundException` occurs during execution of the `try` block, we `catch` it and print an error message along with the exception's stack trace.
 
 > test.java | Output
-
+![](./Assignment_GRP_17/image/output.jpg)
 ---
 
 ![]()
