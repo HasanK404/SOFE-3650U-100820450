@@ -94,4 +94,4 @@ In this project, we have implemented a grocery store product creation system wit
 ## Output
 > test.java | Output
 ---
-![](./Assignment_GRP_17/image/test.jpg)
+![](./Assignment_GRP_17/image/output.jpg)
