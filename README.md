@@ -22,27 +22,20 @@ Ass Group 17
 ## Repository Structure
 
 ```
-- ASSIGNMENT 1
-	- screenDumps
-		- data_ss.jpg
-		- Test_Output.jpg
-		- UML_Diagram.png
+- ASSIGNMENT_GRP_17
+	- image
+		- output.jpg
+		- test.jpg
+		- uml.png
 	- src
-		- data
-			- data.txt
+         	-read.txt
 		-Apples.java
-        -Bananas.java
-        -ConcreteGroceryFactory.java
-        -GroceryFactory.java
-        -GroceryProduct.java
-        -GroceryStoreTest.java
-        -readMe.md
+		-Bananas.java
+        	-ConcreteGroceryFactory.java
+        	-GroceryFactory.java
+        	-GroceryProduct.java
+       	 	-GroceryStoreTest.java
 
-
-	- UML
-		- UML.drawio
-	- REAME.md
-	- test.java
 ```
 
 ## UML Diagram
@@ -56,6 +49,7 @@ Ass Group 17
 ![](./Assignment_GRP_17/image/test.jpg)
 
 ---
+## Test Class
 
 > GroceryStoreTest.java
 
