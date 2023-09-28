@@ -1,5 +1,5 @@
 # SOFE-3650U-100820450
-Ass Group 17 
+Assignment Group 17 
 # SOFE-3650U
 
 # Assignment 1: Design Patterns
