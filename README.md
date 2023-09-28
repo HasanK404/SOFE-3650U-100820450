@@ -57,46 +57,22 @@ Ass Group 17
 
 ---
 
-> test.java
+> GroceryStoreTest.java
 
 ```
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
-
-public class test{
-
+public class GroceryStoreTest {
     public static void main(String[] args) {
-              try {
-            // Read and Scan file
-            File dataFile = new File("./src/data/data.txt");
-            Scanner read = new Scanner(dataFile);
+        GroceryFactory factory = new ConcreteGroceryFactory();
 
-            while (read.hasNextLine()) {
-                String data = read.nextLine();
-
-                // Split Product name and price
-                String[] parts = data.split(" ");
-
-                String product = parts[0];
-                double price = Double.parseDouble(parts[1]);
-
-                // Get the factory for the product
-                GroceryProductFactory factory = factoryProducer.getFactory(product);
-                if (factory != null) {
-                    // Set the price and print the factory
-                    factory.setPrice(price);
-                    System.out.println(factory);
-                }
-            }
-        read.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("Something went wrong -_-");
-            e.printStackTrace();
-        }
-
+        GroceryProduct bananas = factory.createProduct("Bananas");
+        GroceryProduct apples = factory.createProduct("Apples");
+        bananas.setPrice(0.75);
+        apples.setPrice(1.79);
+        System.out.println("Product: " + bananas.getName() + ", Price: $" + bananas.getPrice());
+        System.out.println("Product: " + apples.getName() + ", Price: $" + apples.getPrice());
     }
 }
+
 ```
 
 - We test our Abstract Factory Design Pattern using a `data.txt` file that contains product names and prices of grocery items.
