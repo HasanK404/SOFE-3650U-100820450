@@ -97,6 +97,7 @@ In this project, we have implemented a grocery store product creation system wit
 
    Example "read.txt":
 
+## Output
 > test.java | Output
 ---
 ![](./Assignment_GRP_17/image/test.jpg)
