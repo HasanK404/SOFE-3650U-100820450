@@ -22,7 +22,7 @@ Ass Group 17
 ## Repository Structure
 
 ```
-- AAAIGNMENT 1
+- ASSIGNMENT 1
 	- screenDumps
 		- data_ss.jpg
 		- Test_Output.jpg
@@ -75,11 +75,27 @@ public class GroceryStoreTest {
 
 ```
 
-- We test our Abstract Factory Design Pattern using a `data.txt` file that contains product names and prices of grocery items.
-- We read each line, split it into `product` and `price`, and store these in their respective variables.
-- Using the product name, we call the `getFactory` method from the `factoryProducer` abstract class to get a `GroceryProductFactory` instance.
-- If the `factory` instance exists for the product, we set its `price` and print its results.
-- If a `FileNotFoundException` occurs during execution of the `try` block, we `catch` it and print an error message along with the exception's stack trace.
+## Overview
+
+In this project, we have implemented a grocery store product creation system with the following components:
+
+1. **GroceryProduct Interface**: This is the main interface that all grocery products must implement. It defines methods for getting the product's name, getting its price, and setting the price.
+
+2. **Concrete Grocery Products (e.g., Bananas and Apples)**: These are concrete classes that implement the `GroceryProduct` interface. Each product has a name and a price. The price is set after the product is created and is read from a database (a text file).
+
+3. **GroceryFactory Interface**: This is an abstract factory interface that declares a method for creating grocery products.
+
+4. **Concrete GroceryFactory (ConcreteGroceryFactory)**: This is a concrete factory class that implements the `GroceryFactory` interface. It reads product prices from a text file ("read.txt") and creates grocery products (e.g., Bananas and Apples) with their corresponding prices.
+
+5. **Test Driver (GroceryStoreTest)**: This is a test driver class that demonstrates the functionality of the system. It creates instances of grocery products (e.g., Bananas and Apples) using the `ConcreteGroceryFactory` and displays their names and prices.
+
+## Usage
+
+1. Clone or download this repository to your local machine.
+
+2. Ensure you have a text file named "read.txt" in the project directory. This file should contain product names and their corresponding prices in the format: `Product_Name: Price`.
+
+   Example "read.txt":
 
 > test.java | Output
 ---
